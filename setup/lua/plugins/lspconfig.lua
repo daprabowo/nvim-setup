@@ -33,7 +33,7 @@ return {
 				keymap.set("n", "<C-space>", vim.lsp.buf.hover, opts) -- Hover actions
 				keymap.set("n", "<Leader>a", vim.lsp.buf.code_action, opts) -- Code action groups
 
-				if client.supports_method("textDocument/formatting") then
+				if client:supports_method("textDocument/formatting") then
 					vim.api.nvim_create_autocmd("BufWritePre", {
 						group = vim.api.nvim_create_augroup("RustFormat", { clear = true }),
 						buffer = bufnr,
@@ -43,7 +43,7 @@ return {
 					})
 				end
 
-				if client.supports_method("textDocument/inlayHint") then
+				if client:supports_method("textDocument/inlayHint") then
 					vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 				end
 			end

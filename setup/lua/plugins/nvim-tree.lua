@@ -37,5 +37,6 @@ return {
 		})
 
 		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Open file explorer" })
+		vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFileToggle<CR>", { desc = "Toggle NvimTree on current file" })
 	end,
 }

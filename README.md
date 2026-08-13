@@ -2,11 +2,11 @@
   <img src="assets/neovim.png" width="40%">
 </p>
 
-# ✨ Neovim Setup
+# Neovim Setup
 
 A modern, minimal yet powerful Neovim configuration built with Lua, designed for speed, productivity, and a great developer experience.
 
-## 📦 Features
+## Features
 
 - **Modular Lua config** — Easy to read, extend, and maintain
 - **Beautiful UI** — Gruvbox theme with `lualine`, and `dashboard-nvim`
@@ -19,7 +19,7 @@ A modern, minimal yet powerful Neovim configuration built with Lua, designed for
 - **File Explorer** — With `nvim-tree.lua` and custom keybindings
 - **Session management**, dashboard, and more
 
-## 🚀 Installation
+## Installation
 
 1. Clone this repo to your dotfile directory:
 
@@ -42,12 +42,12 @@ nvim
 4. Update Neovim dependency and setup (run inside vim script):
 
 ```vim
-:PackerSync
+:Lazy sync
 ```
 
 5. Restart Neovim and enjoy!
 
-## 🛠 Dependencies
+## Dependencies
 
 - Neovim >= 0.8 (or 0.10+ for Mason 2.x)
 - Git
@@ -59,7 +59,7 @@ nvim
 - ripgrep, fd, etc. for telescope
 - unzip, wget, curl, gzip, tar, etc. for mason.
 
-## 🔑 Key Bindings
+## Key Bindings
 
 |       Action       |     Key      |
 | :----------------: | :----------: |
@@ -67,10 +67,10 @@ nvim
 |     Live grep      | `<leader>fs` |
 | Open file explorer | `<leader>e`  |
 
-## 📸 Screenshots
+## Screenshots
 
 ![Screenshot](assets/dimvim-dashboard.png)
 
-## 📄 License
+## License
 
 MIT License. Feel free to use, fork, and modify.

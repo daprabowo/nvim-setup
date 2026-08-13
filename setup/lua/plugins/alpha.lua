@@ -45,15 +45,21 @@ return {
 			"                                       – Martin Fowler ",
 		}
 
-		-- Use layout to center everything better
+		-- Center layout vertically
 		dashboard.config.layout = {
-			{ type = "padding", val = 8 }, -- space before header
-			dashboard.section.header,
-			{ type = "padding", val = 2 }, -- space before buttons
-			dashboard.section.buttons,
-			{ type = "padding", val = 0 },
-			dashboard.section.footer,
-			{ type = "padding", val = 20 },
+			{
+				type = "group",
+				val = {
+					dashboard.section.header,
+					{ type = "padding", val = 2 }, -- Space between header & buttons
+					dashboard.section.buttons,
+					{ type = "padding", val = 2 }, -- Space between buttons & footer
+					dashboard.section.footer,
+				},
+				opts = {
+					position = "v_center",
+				},
+			},
 		}
 
 		-- Use your gruvbox colors

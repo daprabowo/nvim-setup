@@ -71,10 +71,10 @@ return {
 		}
 
 		-- Custom highlights
-		vim.api.nvim_set_hl(0, "AlphaHeader", { fg = gruvbox_color.orange, bg = gruvbox_color.black, bold = true })
-		vim.api.nvim_set_hl(0, "AlphaButtons", { fg = gruvbox_color.blue, bg = gruvbox_color.black })
-		vim.api.nvim_set_hl(0, "AlphaFooter", { fg = gruvbox_color.purple, bg = gruvbox_color.blackj, italic = true })
-		vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = gruvbox_color.yellow, bg = gruvbox_color.black, bold = true })
+		vim.api.nvim_set_hl(0, "AlphaHeader", { fg = gruvbox_color.orange, bold = true })
+		vim.api.nvim_set_hl(0, "AlphaButtons", { fg = gruvbox_color.blue })
+		vim.api.nvim_set_hl(0, "AlphaFooter", { fg = gruvbox_color.purple, italic = true })
+		vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = gruvbox_color.yellow, bold = true })
 
 		-- Apply highlights
 		dashboard.section.header.opts.hl = "AlphaHeader"

@@ -2,6 +2,7 @@
 
 link:
 	@echo "🔗 Linking 'setup' to $(HOME)/.config/nvim..."
+	@mkdir -p ~/.config/nvim
 	@stow -t ~/.config/nvim setup
 
 unlink:

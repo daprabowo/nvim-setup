@@ -77,7 +77,7 @@ nvim
 
 ## Screenshots
 
-![Screenshot](assets/dimvim-dashboard.png)
+![Screenshot](assets/screenshot.png)
 
 ## License
 

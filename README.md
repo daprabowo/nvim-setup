@@ -4,7 +4,7 @@
 
 # Neovim Setup
 
-A modern, minimal yet powerful Neovim configuration built with Lua, designed for speed, productivity, and a great developer experience.
+A modern, minimal yet powerful `neovim` configuration built with Lua, designed for **speed**, **productivity**, and a **great developer experience**.
 
 ## Features
 
@@ -21,43 +21,51 @@ A modern, minimal yet powerful Neovim configuration built with Lua, designed for
 
 ## Installation
 
-1. Clone this repo to your dotfile directory:
+1. Install Neovim:
 
-```sh-session
+```sh
+brew install neovim
+```
+
+2. Clone this repo into your dotfile directory:
+
+```sh
 git clone git@github.com:98prabowo/nvim-setup.git
 ```
 
-2. Link Neovim setup files to config directory:
+3. Link Neovim setup files to config directory:
 
-```sh-session
+```sh
 make link
 ```
 
-3. Start Neovim:
+4. Start Neovim:
 
-```sh-session
+```sh
 nvim
 ```
 
-4. Update Neovim dependency and setup (run inside vim script):
+5. Update Neovim dependency and setup (run inside vim script):
 
 ```vim
 :Lazy sync
 ```
 
-5. Restart Neovim and enjoy!
+6. Open or restart Neovim and enjoy!
 
 ## Dependencies
 
 - Neovim >= 0.8 (or 0.10+ for Mason 2.x)
 - Git
+- Gcc / Clang (C compiler)
 - Rust (for Rust LSP)
 - Go (for Go LSP)
 - Node.js / npm (for some LSPs or formatters)
 - Python (optional, for Python LSP)
 - Ruby (optional, for Ruby LSP)
-- ripgrep, fd, etc. for telescope
+- ripgrep, fzf, fd, etc. for telescope
 - unzip, wget, curl, gzip, tar, etc. for mason.
+- tree-sitter for nvim-tree.
 
 ## Key Bindings
 

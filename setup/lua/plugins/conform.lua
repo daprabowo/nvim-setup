@@ -15,7 +15,7 @@ return {
 			python = { "isort", "black" },
 			rust = { "rustfmt", lsp_format = "fallback" },
 			sh = { "shfmt" },
-			swift = { "swift-format" },
+			swift = { "swift" },
 			typescript = { "prettierd", "prettier", stop_after_first = true },
 		},
 		formatters = {

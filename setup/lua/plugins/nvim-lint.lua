@@ -5,8 +5,8 @@ return {
 		local lint = require("lint")
 
 		lint.linters.swift_format_lint = {
-			cmd = "swift-format",
-			args = { "lint" },
+			cmd = "swift",
+			args = { "format", "lint" },
 			stdin = false,
 			stream = "stderr",
 			ignore_exitcode = true,

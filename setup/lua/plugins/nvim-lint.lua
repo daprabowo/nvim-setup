@@ -4,9 +4,21 @@ return {
 	config = function()
 		local lint = require("lint")
 
+		lint.linters.swift_format_lint = {
+			cmd = "swift-format",
+			args = { "lint" },
+			stdin = false,
+			stream = "stderr",
+			ignore_exitcode = true,
+			parser = require("lint.parser").from_pattern(
+				"([^:]+):(%d+):(%d+):%s+(%w+):%s+(.*)",
+				{ "file", "lnum", "col", "severity", "message" }
+			),
+		}
+
 		lint.linters_by_ft = {
 			go = { "golangcilint" },
-			swift = { "swiftlint" },
+			swift = { "swift_format_lint" },
 			sql = { "sqlfluff" },
 			yaml = { "yamllint" },
 		}

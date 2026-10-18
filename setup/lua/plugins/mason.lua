@@ -70,10 +70,6 @@ return {
 				-- SQL
 				"sqlfluff", -- sql linter/formatter
 
-				-- Swift
-				"swiftformat", -- swift formatter
-				"swiftlint", -- swift linter
-
 				-- Shell
 				"shfmt", -- shell formatter
 
